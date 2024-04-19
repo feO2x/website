@@ -1,0 +1,12 @@
+.menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    & > svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

@@ -1,4 +1,4 @@
-$background-color: hsl(217, 33%, 17%);
+@import "variables";
 
 *,
 *::before,
@@ -36,4 +36,19 @@ html {
 body {
     background-color: $background-color;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+header {
+    background-color: $header-color;
+    color: white;
+    height: $header-height;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    flex-grow: 1;
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import { AppShell } from "./app-shell/app-shell";
 
 export const metadata: Metadata = {
     title: "feO2x.com",
@@ -7,12 +8,12 @@ export const metadata: Metadata = {
         "feO2x.com - Kenny Pflug's website on .NET and software development",
 };
 
-export default function RootLayout({
-    children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: ChildProps) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body>
+                <AppShell>{children}</AppShell>
+            </body>
         </html>
     );
 }
