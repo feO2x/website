@@ -51,4 +51,20 @@ header {
 
 main {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: $footer-color;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: $max-content-width;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
 }

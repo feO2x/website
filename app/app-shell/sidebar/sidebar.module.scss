@@ -1,0 +1,13 @@
+@import "../../variables";
+
+.sidebar {
+    flex-basis: 20rem;
+    background-image: linear-gradient($primary-color, $secondary-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem 1rem;
+}
