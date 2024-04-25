@@ -36,9 +36,6 @@ html {
 body {
     background-color: $background-color;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
 }
 
 header {
@@ -47,12 +44,16 @@ header {
     height: $header-height;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 main {
-    flex-grow: 1;
     display: flex;
     justify-content: center;
+    margin-top: $header-height;
 }
 
 footer {
@@ -60,11 +61,4 @@ footer {
     color: white;
     display: flex;
     justify-content: center;
-}
-
-.container {
-    max-width: $max-content-width;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
 }

@@ -7,7 +7,7 @@ export function AppShell({ children }: ChildProps) {
         <>
             <Header />
             <main>
-                <div className="container">
+                <div className={styles.container}>
                     <article className={styles["main-content"]}>
                         {children}
                     </article>
